@@ -16,5 +16,15 @@ namespace AppIUWin
         {
             InitializeComponent();
         }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            int num;
+            double res;
+            num = int.Parse(this.txtNum.Text);
+
+            res = AppProgramacionCapas.Factorial.fact(num);
+            this.txtRes.Text = res.ToString();
+        }
     }
 }
