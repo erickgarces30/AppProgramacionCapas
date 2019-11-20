@@ -40,6 +40,7 @@
             this.txtX2 = new System.Windows.Forms.TextBox();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnGetX1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -126,7 +127,7 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(33, 213);
+            this.btnCalcular.Location = new System.Drawing.Point(12, 213);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(129, 38);
             this.btnCalcular.TabIndex = 10;
@@ -136,7 +137,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(174, 213);
+            this.btnCerrar.Location = new System.Drawing.Point(162, 213);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(129, 38);
             this.btnCerrar.TabIndex = 11;
@@ -144,11 +145,22 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // btnGetX1
+            // 
+            this.btnGetX1.Location = new System.Drawing.Point(84, 257);
+            this.btnGetX1.Name = "btnGetX1";
+            this.btnGetX1.Size = new System.Drawing.Size(129, 38);
+            this.btnGetX1.TabIndex = 12;
+            this.btnGetX1.Text = "GETX1";
+            this.btnGetX1.UseVisualStyleBackColor = true;
+            this.btnGetX1.Click += new System.EventHandler(this.btnGetX1_Click);
+            // 
             // frmEcuacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(317, 263);
+            this.ClientSize = new System.Drawing.Size(316, 307);
+            this.Controls.Add(this.btnGetX1);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtX2);
@@ -182,5 +194,6 @@
         private System.Windows.Forms.TextBox txtX2;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnGetX1;
     }
 }

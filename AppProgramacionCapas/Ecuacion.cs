@@ -58,5 +58,25 @@ namespace AppProgramacionCapas
             return x2;
 
         }
-    }
+
+        public static double getx1(double a, double b, double c)
+        {
+
+            double x1 = 0;
+
+            if (a == 0)
+            
+                throw new Exception("Error, división por cero...");
+                
+                double d = (b * b) - (4 * a * c);
+
+                if (d < 0)
+
+                    throw new Exception("Raíce negativas. La ecuación tiene solución imaginaria...");
+
+                x1 = (-b + Math.Sqrt(d)) / (2 * a);
+
+                return x1;
+            }
+        }
 }

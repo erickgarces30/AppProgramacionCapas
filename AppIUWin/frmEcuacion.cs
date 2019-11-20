@@ -52,5 +52,22 @@ namespace AppIUWin
             }
 
         }
+
+        private void btnGetX1_Click(object sender, EventArgs e)
+        {
+            double a, b, c, x1;
+            a = Double.Parse(this.txtA.Text);
+            b = Double.Parse(this.txtB.Text);
+            c = Double.Parse(this.txtC.Text);
+            try
+            {
+                x1 = AppProgramacionCapas.Ecuacion.getx1(a, b, c);
+                this.txtX1.Text = x1.ToString("0.00");
+            }
+            catch(Exception ex1)
+            {
+                MessageBox.Show(ex1.Message.ToString());
+            }
+        }
     }
 }
